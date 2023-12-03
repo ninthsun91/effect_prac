@@ -1,0 +1,39 @@
+{
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@test/*": ["test/*"],
+    },
+
+    "target": "ES2022",
+    "module": "CommonJS",
+    "lib": ["ES2022"],
+
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "incremental": true,
+    "declaration": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "removeComments": true,
+
+    "strict": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+  }
+}
